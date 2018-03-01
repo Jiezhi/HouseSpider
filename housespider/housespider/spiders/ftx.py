@@ -11,7 +11,7 @@ Reference:
 import scrapy
 
 
-class FangtxSpider(scrapy.Spider):
+class FangSpider(scrapy.Spider):
     name = 'FangTX'
     allowed_domains = ['esf.nanjing.fang.com']
 
@@ -59,5 +59,5 @@ class FangtxSpider(scrapy.Spider):
                 # ['优质教育']
             }
 
-        next_page = 'http://esf.nanjing.fang.com/' + response.css('a#PageControl1_hlk_next::attr(href)').extract_first()
-        yield scrapy.Request(next_page, callback=self.parse)
+        # next_page = 'http://esf.nanjing.fang.com/' + response.css('a#PageControl1_hlk_next::attr(href)').extract_first()
+        # yield scrapy.Request(next_page, callback=self.parse)

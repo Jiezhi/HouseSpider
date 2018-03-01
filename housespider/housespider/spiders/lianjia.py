@@ -12,7 +12,7 @@ import scrapy
 import re
 
 
-class NjHouseSpider(scrapy.Spider):
+class LianjiaSpider(scrapy.Spider):
     name = 'nj_house'
 
     allowed_domains = ['lianjia.com']
