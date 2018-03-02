@@ -5,10 +5,18 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Item, Field
 
 
-class HousespiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class HousespiderItem(Item):
+    title = Field()
+    url = Field()
+    info = Field()
+    loc = Field()
+    loc_url = Field()
+    loc_detail = Field()
+    pub_time = Field()
+    area = Field()
+    price = Field()
+    unit_price = Field()
+    tags = Field()
