@@ -24,7 +24,3 @@ scrapy runspider lianjia.py -o lianjia.csv
 
 [链家信息提取](https://github.com/Jiezhi/HouseSpider/blob/master/lianjia.ipynb)
 
-
-欢迎提问，如果对你有帮助，也可以请我一袋辣条，哈哈。
-
-![](ali_qr.jpg)
