@@ -32,7 +32,7 @@ class A5i5jSpider(CrawlSpider):
         :return:
         """
         print(response.url)
-        from housespider.housespider.items import House5i5jItem
+        from housespider.items import House5i5jItem
         loader = ItemLoader(item=House5i5jItem(), response=response)
         loader.add_xpath('title', '//h1[@class="house-tit"]/text()')
         loader.add_xpath('tag', '///div[@class="rent-top fl"]/p/text()')

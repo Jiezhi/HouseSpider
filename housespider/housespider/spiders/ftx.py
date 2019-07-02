@@ -19,9 +19,9 @@ class FangSpider(scrapy.Spider):
     name = 'ftx'
     allowed_domains = ['esf.nanjing.fang.com']
 
-    start_urls = ['http://esf.nanjing.fang.com/house/kw%cf%c9%c1%d6%d0%c2%b4%e5/']
+    # start_urls = ['http://esf.nanjing.fang.com/house/kw%cf%c9%c1%d6%d0%c2%b4%e5/']
 
-    # start_urls = ['http://esf.nanjing.fang.com/house/h316/']
+    start_urls = ['http://esf.nanjing.fang.com/house/h316/']
 
     # def start_requests(self):
     #     all_url = ['https://nj.lianjia.com/ershoufang/pg{}/'.format(i) for i in range(1, 100)]
@@ -116,6 +116,7 @@ class FangSpider(scrapy.Spider):
         l.add_xpath('add_time', '//div[@class="cont clearfix"]/div[@class="text-item clearfix"][7]/span[2]/text()',
                     MapCompose(str.strip))
 
+        l.add_value('url', response.url)
         # 暂时不考虑图片这块
         # >> > response.xpath('//div[@class="cont-sty1 clearfix"]/div/div/img/@data-src').extract()
         # ['http://cdnsfb.soufunimg.com/viewimage/1/2018_2/24/M9/16/6e606af50b8a4141a34be41c9756e9da/452x340c.jpg',
@@ -129,3 +130,9 @@ class FangSpider(scrapy.Spider):
         #  'http://cdnsfb.soufunimg.com/viewimage/1/2018_2/24/M9/17/8cf96e0adcae4fb0b8afedeff6a390cc/452x340c.jpg']
 
         yield l.load_item()
+
+
+if __name__ == '__main__':
+    from scrapy import cmdline
+
+    cmdline.execute('scarpy crawl 5i5j'.split())

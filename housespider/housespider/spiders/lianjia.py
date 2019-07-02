@@ -13,7 +13,7 @@ import re
 
 
 class LianjiaSpider(scrapy.Spider):
-    name = 'nj_house'
+    name = 'lianjia'
 
     allowed_domains = ['lianjia.com']
 
