@@ -6,7 +6,7 @@ constantly==15.1.0
 cryptography==2.7
 cssselect==1.0.3
 hyperlink==18.0.0
-idna==2.6
+idna==2.10
 incremental==17.5.0
 lxml==4.1.1
 parsel==1.5.1
