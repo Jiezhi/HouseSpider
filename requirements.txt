@@ -11,7 +11,7 @@ incremental==17.5.0
 lxml==4.6.3
 parsel==1.6.0
 pyasn1==0.4.2
-pyasn1-modules==0.2.1
+pyasn1-modules==0.2.8
 pycparser==2.18
 PyDispatcher==2.0.5
 PyHamcrest==1.9.0
