@@ -17,7 +17,7 @@ PyDispatcher==2.0.5
 PyHamcrest==1.9.0
 pyOpenSSL==17.5.0
 queuelib==1.4.2
-Scrapy==1.6.0
+Scrapy==2.4.1
 service-identity==17.0.0
 six==1.11.0
 Twisted==19.7.0
